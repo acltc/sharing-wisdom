@@ -16,7 +16,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "main";
- @import "ionicons.min";
+ @import 'ionicons';
  @import "animate";
  @import "owl.carousel";
  @import "owl.theme";
@@ -47,6 +47,34 @@ figure .blog-link {
   margin-top: 0;
 }
 
+.brand-name {
+  color: #02BDD5;
+  font-size: 32px;
+}
+
+.brand-name:hover {
+  color: #02BDD5;
+}
+
+.blog-header {
+  padding-top: 20px;
+}
+
+.btn-send {
+  background: #02bdd5;
+    color: #fff;
+    border-radius: 0;
+}
+
+#body_content_title {
+  display: none;
+}
+
+#call-to-action {
+  margin-top: 30px;
+}
+
+
 #menu ul {
   list-style: none;
   padding: 0px;
@@ -60,3 +88,16 @@ figure .blog-link {
     }
   }
 }
+
+@media (min-width: 768px) {
+  .navbar-right {
+    margin-top: 9px;
+  }
+}
+
+
+
+
+
+
+

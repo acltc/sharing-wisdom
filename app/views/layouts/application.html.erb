@@ -14,8 +14,27 @@
       <section id="page">
         <%= yield %>
       </section>
-      <footer>
-        <%= render "/refinery/footer" -%>
+      <section id="call-to-action">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="block">
+                         <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Let Us Help You Achieve Your Goals</h1>
+                         <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Contact us for a consultation.</p>
+                         <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact Us</a>
+                     </div>
+                 </div>
+
+             </div>
+         </div>
+      </section>
+      <footer id="footer">
+        <div class="container">
+          <div class="col-md-8">
+            <p class="copyright">
+          <%= render "/refinery/footer" -%> </p>
+        </div>
+        </div>
       </footer>
     </div>
   </body>

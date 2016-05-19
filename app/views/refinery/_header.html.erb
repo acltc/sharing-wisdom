@@ -1,5 +1,4 @@
-
-<header id="top-bar" class="navbar-fixed-top animated-header">
+<header id="top-bar" class="navbar animated-header">
    <div class="container">
        <div class="navbar-header">
            <!-- responsive nav button -->
@@ -14,7 +13,9 @@
            <!-- logo -->
            <div class="navbar-brand">
              <h1 id='logo'>
-               <%= link_to Refinery::Core.site_name, refinery.root_path %>
+               <div class="icon">
+                   <i class="ion-ios-lightbulb" style="color:#02BDD5;"><%= link_to Refinery::Core.site_name, refinery.root_path, class:"brand-name" %></i>
+               </div>
              </h1>
            </div>
            <!-- /logo -->

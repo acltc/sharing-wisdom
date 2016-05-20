@@ -17,11 +17,10 @@
             <% end %>
 
             <h2><%= t('add', :scope => 'refinery.blog.posts.show.comments') %></h2>
-            <%= form_for [refinery, :blog, @comment] do |f| %>
+            <%= form_for [refinery, :blog, @comment], :html => {:class => "form-horizontal"} do |f| %>
               <%= render "/refinery/admin/error_messages",
                          :object => f.object,
                          :include_object_name => true %>
-              <form role="form" class="form-horizontal">
                 <div class="form-group">
                   <div class="col-lg-6">
                     <%= f.label :name, class:"sr-only" %>
@@ -45,7 +44,6 @@
                 </div>
                 <% end %>
               <% end %>
-              </form>
           </aside>
         </div>
       </div>

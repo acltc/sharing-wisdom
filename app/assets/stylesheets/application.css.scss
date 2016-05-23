@@ -28,6 +28,13 @@ figure .blog-link {
   left: 30%;
 }
 
+.homepage-heading {
+  font-size: 30px !important;
+  text-transform: uppercase !important;
+  font-weight: 400;
+  color: #01A4BA;
+}
+
 .homepage-header {
   font-weight: 400;
   color: #01A4BA;
@@ -62,8 +69,8 @@ figure .blog-link {
 
 .btn-send {
   background: #02bdd5;
-    color: #fff;
-    border-radius: 0;
+  color: #fff;
+  border-radius: 0;
 }
 
 #body_content_title {
@@ -73,7 +80,6 @@ figure .blog-link {
 #call-to-action {
   margin-top: 30px;
 }
-
 
 #menu ul {
   list-style: none;
@@ -93,6 +99,10 @@ figure .blog-link {
   .navbar-right {
     margin-top: 9px;
   }
+
+  .address.wow.fadeInLeft.animated {
+    padding-bottom: 19px !important;
+  } 
 }
 
 

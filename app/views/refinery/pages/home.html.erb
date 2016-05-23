@@ -7,15 +7,14 @@
                 <!-- Slider -->
                 <section class="cd-intro">
                     <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
-                      Our mission is to enhance the performance <br>of individuals and their organizations.
+                      <%= raw @page.content_for(:first_headline) %>
                     </h1>
                     </section> <!-- cd-intro -->
                     <!-- /.slider -->
                     <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
-                      At Sharing Wisdom, we leverage over 40 year's experience in business and education<br> to help individuals and organiations achieve their goals.
-
+                      <%= raw @page.content_for(:first_headline_text) %>
                     </h2>
-                    <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#works" data-section="#works" >View Works</a>
+                    <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#works" data-section="/contact" >Contact Us</a>
 
                 </div>
             </div>
@@ -25,8 +24,8 @@
 <section id="works" class="works">
   <div class="container">
      <div class="section-heading">
-       <h1 class="title wow fadeInDown homepage-header" data-wow-delay=".3s">Whatever is impeding your progress, we can help</h1>
-         <h1 class="title wow fadeInDown homepage-header" data-wow-delay=".3s"><%= raw @page.content_for(:body) %></h1>
+       <h1 class="title wow fadeInDown" data-wow-delay=".3s"><%= raw @page.content_for(:second_headline) %></h1>
+         <h1 class="title wow fadeInDown homepage-header" data-wow-delay=".3s"><%= raw @page.content_for(:second_headline_text) %></h1>
      </div>
      <div class="row">
          <div class="col-sm-4 col-xs-12">
@@ -35,13 +34,13 @@
                      <%= image_tag "business-meeting.jpg", class: "img-responsive" %>
                      <div class="overlay">
                          <div class="buttons">
-                           <a href="#">Learn About Us</a>
+                           <a href="/about">Learn About Us</a>
                          </div>
                      </div>
                  </div>
                  <figcaption>
                  <h4>
-                 <a href="#">
+                 <a href="/about">
                      Our Story
                  </a>
                  </h4>
@@ -60,7 +59,7 @@
                  </div>
                  <figcaption>
                  <h4>
-                 <a href="#">
+                 <a href="/blog">
                      Blog
                  </a>
                  </h4>
@@ -70,17 +69,17 @@
          <div class="col-sm-4 col-xs-12">
              <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
                  <div class="img-wrapper">
-                     <%= image_tag "about-company.jpg", class:"img-responsive" %>
+                     <%= image_tag "contact-us.jpg", class:"img-responsive" %>
                      <div class="overlay">
                          <div class="buttons blog-link">
-                             <a href="#">View Our Partners</a>
+                             <a href="/contact">Contact Us</a>
                          </div>
                      </div>
                  </div>
                  <figcaption>
                  <h4>
-                 <a href="#">
-                     Partners
+                 <a href="/contact">
+                     Contact
                  </a>
                  </h4>
                  </figcaption>
@@ -96,10 +95,8 @@ Portfolio Section Start
 <section id="feature">
    <div class="container">
        <div class="section-heading">
-           <h1 class="title wow fadeInDown homepage-header" data-wow-delay=".3s">Whatever is impeding your progress, we can help</h1>
-           <h3 class="wow fadeInDown homepage-subtitle" data-wow-delay=".5s">
-             We specialize in helping resolve the issues—whether personal, academic or professional—that impede performance.
-           </h3>
+           <h1 class="title wow fadeInDown homepage-header" data-wow-delay=".3s"><%= raw @page.content_for(:third_headline) %></h1>
+           <h3 class="wow fadeInDown homepage-subtitle" data-wow-delay=".5s"><%= raw @page.content_for(:third_headline_text) %></h3>
        </div>
        <div class="row">
            <div class="col-md-4 col-lg-4 col-xs-12">

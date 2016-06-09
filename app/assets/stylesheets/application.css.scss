@@ -55,12 +55,15 @@ figure .blog-link {
 }
 
 .brand-name {
-  color: #02BDD5;
+  color: #02BDD5 !important;
   font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .brand-name:hover {
   color: #02BDD5;
+  text-decoration: none;
 }
 
 .blog-header {
@@ -100,9 +103,9 @@ figure .blog-link {
     margin-top: 9px;
   }
 
-  .address.wow.fadeInLeft.animated {
-    padding-bottom: 19px !important;
-  } 
+  .address {
+    padding-bottom: 20px !important;
+  }
 }
 
 
